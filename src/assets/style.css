@@ -1,0 +1,195 @@
+.back{
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(255.35deg, #DC3131 0.83%, rgba(255, 79, 79, 0) 108.93%),
+                linear-gradient(0deg, #FF5E56, #FF5E56);
+ }
+
+ @font-face {
+    font-family: "Lab Grotesque"; 
+     src: url("//app-test/src/assets/LabGrotesque-Regular.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: 400;
+    font-display: swap;
+    } 
+
+.main-btn{
+    position: absolute;
+    width: 768px;
+    height: 1024px;
+    left: 0px;
+    top: 0px;
+
+    /* Gradient Red */
+
+    background: linear-gradient(255.35deg, #DC3131 0.83%, rgba(255, 79, 79, 0) 108.93%), #FF5E56;
+    /* Soft Shadow */
+
+    box-shadow: 0px -0.11px 16.9495px rgba(183, 187, 225, 0.33);
+    border-radius: 0px;
+}
+/* XTR */
+.form-check input:checked{
+    color: white;
+    border-radius: 6px;
+    border-color: white;
+    background: linear-gradient(255.35deg, #DC3131 0.83%, rgba(255, 79, 79, 0) 108.93%),
+                linear-gradient(0deg, #FF5E56, #FF5E56);
+
+}
+/* Кнопка расчета */
+.count-btn{
+    font-family: Lab Grotesque;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+
+    color: #EA0029;
+}
+.count-btn:hover{
+    color: #F53A31;
+    text-decoration: none;
+}
+/* Радио кнопка */
+
+input[type="radio"]{
+    display: none;
+}
+.radio-container label{
+    position: relative;
+    font-family: Lab Grotesque;
+    font-size: 14px;
+    line-height: 24px;
+    padding: 6px 12px;
+    margin: 2px;
+    background: #EEF0F2;
+    border-radius: 50px;
+    align-items: center;
+    cursor: pointer;
+    
+}
+.radio-container label:hover,
+input[type="radio"]:hover {
+    background: #DFE3E6;
+}
+
+input[type="radio"]:checked + label{
+    background: linear-gradient(255.35deg, #DC3131 0.83%, rgba(255, 79, 79, 0) 108.93%), #FF5E56;
+    color: white;
+}
+/* Кнопка модала */
+.btn-container{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.btn-modal{
+    width: 100%;
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+    background: linear-gradient(255.35deg, #DC3131 0.83%, rgba(255, 79, 79, 0) 108.93%), #FF5E56;
+    box-shadow: 0px 0px 24px rgba(234, 0, 41, 0.33);
+    border-radius: 6px;
+    padding: 10px;
+    border: none;
+}
+.btn-modal:hover{
+    background: #EA0029;
+    box-shadow: 0px 0px 24px rgba(234, 0, 41, 0.33);
+}
+/* Первая кнопка */
+
+.btn-main{
+    text-decoration: none;
+    display: inline-block;
+    background:  none;
+    border-radius: 6px;
+    border: 1px solid #FFFFFF;
+    box-sizing: border-box;
+        
+    padding: 10px;
+    font-family: Lab Grotesque;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+    
+}
+.btn-main:hover{
+    background: white;
+    color: black;
+}
+/* Чекбоксы */
+
+  *{
+     box-sizing: border-box; 
+  }
+  .checkbox-container{
+      display: flex;
+      align-items: center;
+  }
+  .checkbox-container label{
+      cursor: pointer;
+      display: flex;
+      font-size: 14px;
+  }
+  .checkbox-container input[type='checkbox']{
+      cursor: pointer;
+      opacity: 0;
+      position: absolute;
+  }
+  .checkbox-container label::before{
+      content: '';
+      width: 20px;
+      height: 20px;
+      margin-right: .5em;
+      border: 1px solid #DFE3E6;
+      border-radius: 6px;
+  }
+  .checkbox-container label:hover::before,
+  .checkbox-container input[type='checkbox']:hover {
+    border-color: black;
+}
+
+    .checkbox-container input[type='checkbox']:checked + label::before {
+        
+        background: linear-gradient(255.35deg, #DC3131 0.83%, rgba(255, 79, 79, 0) 108.93%),
+                    linear-gradient(0deg, #FF5E56, #FF5E56);
+        content: '✓';
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+/* Close btn */
+.close-thik::after {
+    position: absolute;
+  }
+  /* Input */
+  input[type=text] {
+    width: 100%;
+    padding: 4px;
+    border: 1px solid #DFE3E6;
+    box-sizing: border-box;
+    border-radius: 3px;
+    box-sizing: border-box;
+  }
+
+  input[type=text]:hover {
+    border: 1px solid #000000;
+  }
+  input[type=text]:focus {
+    border: 1px solid #DFE3E6;
+  }
+
+
+
